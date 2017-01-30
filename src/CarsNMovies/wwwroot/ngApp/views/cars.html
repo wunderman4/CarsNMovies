@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <h2 id="carsHeader">Check out these sweet rides</h2>
+
+        <table class="table-hover table-striped ">
+            <tbody>
+                <tr ng-repeat="car in c.cars" ui-sref="carDetails({id:car.id})">
+                    <td><img ng-src="{{car.imageUrl}}" class="img-thumbnail img-rounded" width="500" /></td>
+                    <td>{{car.shortDescription}}</td>
+                    <td>Price: {{car.price| currency:$:0}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

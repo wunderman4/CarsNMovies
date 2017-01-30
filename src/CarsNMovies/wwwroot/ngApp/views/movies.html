@@ -1,0 +1,19 @@
+﻿<h2 id="moviesHeader">Ahh yea, I have five whole movies...</h2>
+<div class="container-fluid">
+    <table class="table-hover table-striped" >
+      <thead>
+         <tr class="row">
+            <th class="col-lg-4 col-md-4 col-sm-4 text-center">Movie Id:</th>
+            <th class="text-center">Movie Title:</th>
+            <th class="text-center">Movie Director</th>
+         </tr>
+      </thead>
+        <tbody class="padded">
+            <tr ng-repeat="movie in c.movies" ui-sref="movieDetails({id:movie.id})" class="row">
+                <td class="text-center">{{movie.id}}</td>
+                <td class="text-center">{{movie.title}}</td>
+                <td class="text-center">{{movie.director}}</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>

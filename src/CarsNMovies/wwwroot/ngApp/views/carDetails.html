@@ -1,0 +1,23 @@
+﻿
+<div class="container ">
+    
+    <h1>{{c.car.shortDescription}}</h1>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="text-center"><h3>Bio</h3></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img ng-src="{{c.car.imageUrl}}" class="img-responsive img-rounded center-block" alt=" Cover Image" width="600" height="600"></td>
+                    <td class="col-md-2 text-center"><p>{{c.car.fullDescription}}</p></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!--  {{c.car.id}}{{c.car.shortDescription}}{{c.car.price | currency:$:0}}{{car.fullDescription}}-->

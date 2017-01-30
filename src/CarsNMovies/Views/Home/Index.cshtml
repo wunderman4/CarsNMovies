@@ -1,0 +1,54 @@
+<html ng-app="CarsNMovies">
+<head>
+    <title>CarsNMovies</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Oswald" rel="stylesheet">
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <base href="/" />
+</head>
+<body >
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1  id="homeLogo">Wunderful Cars and Movies</h1>
+            <h5>a place for super cool people that like two specific yet different things...</h5>
+        </div>
+        <nav class="navbar navbar-inverse ">
+            <div class="container-fluid">
+                <div class="navbar-header text-center">
+                    <a class="navbar-brand" href="/">Home   |</a>
+                    <a class="navbar-brand" href="/cars">Cars   |</a>
+                    <a class="navbar-brand" href="/movies">Movies   </a>
+                </div>
+            </div>
+        </nav>
+        <hr />
+        <ui-view></ui-view>
+        <br />
+        <br />
+        <br />
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">UmmBacon Copyright 2016</span>
+            </div>
+        </footer>
+        </div>
+
+    <!-- Library Files -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/bower_components/angular-touch/angular-touch.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <!-- App Files-->
+    <script src="/ngapp/app.js"></script>
+    <script src="/ngapp/controllers/controllers.js"></script>
+    <script src="/ngapp/services/services.js"></script>
+    
+
+
+</body>
+</html>
